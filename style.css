@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px;
+}
+
+.header-logo {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.header,
+.footer {
+    background-color: #1f2937;
+}
+
+a {
+    text-decoration: none; /* Remove the underline */
+}
+
+/* .hero-secondary, */
+a {
+    font-size: 18px;
+    color: #e5e7eb;
+}
