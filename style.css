@@ -14,6 +14,13 @@ body {
     margin-right: auto;
 }
 
+.card-container,
+.section-three > * {
+    max-width: 765px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     color: #f9faf8;
     display: flex;
@@ -34,7 +41,7 @@ body {
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 46px;
     padding: 100px 0px;
 }
@@ -60,6 +67,35 @@ body {
 
 .section-three {
     background-color: #e5e7eb;
+    padding: 136px 0px;
+    color: #1f2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;    
+    font-weight: 100;
+}
+
+.quote-source {
+    text-align: right;
+}
+
+.quote-source,
+.cta-text-bold {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cta-container {
+    max-width: 765px;
+    margin: 100px auto;
+    padding: 50px 100px;
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-one,
@@ -72,20 +108,37 @@ a {
 }
 
 .hero-sec-text,
-a {
+a,
+.footer,
+.cta-text {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-button {
+.hero-button,
+.cta-button {
     color: #f9faf8;;
     background-color: #3882F6;
-    border-radius: 5px;
-    border: 0px;
+    border-radius: 8px;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px 20px;
-    width: 150px;
+    padding: 8px;
+    width: 140px;
+}
+
+.hero-button {
+    border: none;
+}
+
+.cta-button {
+    border: 3px solid #e5e7eb;
+}
+
+.information-header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 50px 0px;
 }
 
 ul {
@@ -96,24 +149,43 @@ ul {
 
 .card-container {
     display: flex;
+    justify-content: center;
+    gap: 55px;
+    max-width: 1300px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 150px;
 }
 
 .hero-image {
     width: 700px;
     height: auto;
     background-color: #e5e7eb;
-
+    flex-shrink: 0;
 }
 
 .card-image {
-    height: 200px;
-    width: 200px;
-    border: 5px solid #3882F6;
-    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 136px;
+}
+
+p {
+    margin: 0px;
+}
+
+.footer {
+    padding: 50px 0px;    
+    text-align: center;
 }
